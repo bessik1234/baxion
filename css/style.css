@@ -1,17 +1,377 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,900&display=swap');
-
-input {
-    display: none;
-}
 
 body {
     margin: 0;
 
 }
-
 .wrapper {
+  border: dashed 1px red;
+ height: 900px;
+ 
+   margin: 0;
+} 
+.wrapper1 {
+ 
+    background: linear-gradient(to right, #000 32% , #fff 32%);
+} 
+.wrapper2 {
 
-    margin: auto;
-    width: 80%;
+    background: #FAE8E4;
+} 
+ .wrapper3 {
+
+background: #FAE8E4  url("../img/liner.png") no-repeat top left 386px;
+}
+
+.header{
+ 
+ display: flex;
+  padding-top: 45px;
+  padding-left: 57px;
+  margin-bottom: 93px;
+}
+.logo{
+   display: block;
+text-decoration: none;
+  color: #fff;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 37px;}
+
+.dropbtn {
+
+    padding: 5px;
+    cursor: pointer;
 
 }
+
+
+.dropdown {
+
+   margin-top: 2px;
+  margin-left: 240px;
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    
+}
+
+.dropbtn
+{
+  position: absolute;
+  top: 0;
+color: #fff;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+ 
+  width: 40px;
+  color: #fff;
+}
+
+.dropbtn::after {
+    background: rgba(0, 0, 0, 0) url("../img/Vector.png") no-repeat scroll center center;
+    content: "";
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 11px;
+}
+
+
+
+
+.dropdown-content a {
+    color: white;
+    padding: 2px 0 2px 4px;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+}
+
+
+.dropdown-content a:hover {background-color: #000}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+ #menu__toggle {
+  opacity: 0;
+}
+.menu__btn {
+  display: block; 
+  align-items: center; 
+  position: absolute;
+  top: 0;
+  right: 0;
+   padding-left: 26px;
+  
+  
+  width: 66px;
+  height: 92px;
+  cursor: pointer;
+  background: #cfd8dcff;
+  z-index: 60;
+}
+
+.menu__btn > span,
+/* .menu__btn > span::before, */
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  top: 39px;
+    width: 35px;
+  height: 4px;
+  background-color: #000 ;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  z-index: 50;
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  margin: 0;
+  padding: 250px 0 500px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+} */
+
+.img{ 
+  
+  display: block;
+      padding-top: 2%;
+       padding-left: 600px;
+       padding-bottom:149px;
+       margin-left: 186px;
+       
+       background:url("../img/pete.png");
+       background-repeat: no-repeat;
+       background-position:top left ;
+}
+.h1q{
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 80px;
+line-height: 82px;
+margin-bottom: 20px;
+}
+.h1w{
+  width: 467px;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 21px;
+margin-bottom: 18px;
+
+}
+
+.com{
+
+  display: flex;
+  padding: 12px 0 0 0;
+}
+
+.button{ border: 1.5px solid #000000;
+box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+   
+    color: #000;
+       transition: opacity .5s;
+   font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 0px;
+    padding:25px 41px 14px 41px;
+    margin-left: 1px;
+}
+.button2{
+
+  margin-left: 48px;
+  color: #000;
+  text-decoration: none;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 0px;
+padding-top:22px;
+}
+
+
+.arrow-1 {
+    cursor: pointer;
+    z-index: 1;
+    width: 40px;
+    height: 50px;
+    margin: 0 0 0 20px;
+}
+.arrow-1 div {
+    position: relative;
+    top: 20px;
+    width: 43px;
+    height: 1px;
+    background-color: #000;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    left:0;
+    display: block;
+}
+.arrow-1 div::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 1px;
+    top: -2px;
+    right: 0;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+.arrow-1 div::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 1px;
+    top: 2px;
+    right: 0;
+    background-color: #000;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+.arrow-1:hover {
+    animation: arrow-1 .5s linear infinite;
+}
+@keyframes arrow-1 {
+    0% {
+        right:150px;
+    }
+    25% {
+        left:84.5%;
+    }
+    50% {
+        right:150px;
+    }
+}
+.pop {
+    cursor: pointer;
+    margin-left: 495px;
+    width: 50px;
+    height: 50px;
+   
+}
+.pop div {
+    position: relative;
+    border: 1px solid #000;
+    border-radius:30px;
+    width: 27px;
+    height: 46px;
+    background-color: #fff;
+
+    display: block;
+}
+.pop div::after {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 2px;
+    top: 15px;
+    right: 8px;
+    background-color: #000;
+    transform: rotate(90deg);
+}
+
+.pop:hover {
+    animation: pop 1s linear infinite;
+}
+
+.content{
+  width: 100%;display: flex;
+}
+.img-sociale{
+  margin-left: 52px;
+}
+.img-iso{
+  margin-right: 7px;
+} */
+/* .sumk{
+display: flex;
+}
+.pinky{border: dashed 1px red;
+    z-index: 1;
+    position: absolute;
+   top: 1120px;
+   left: 130px;
+
+}
+.bluey{border: dashed 1px red;
+    z-index: 20;
+     position: absolute;
+   top: 930px;
+   left: 230px;
+}
+.sumki-opisanie{
+
+}
+.sumki-footer{
+
+} */
+
