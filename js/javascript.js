@@ -8,4 +8,4 @@ function myFunction() {
   element.classList.toggle("open");
   
   x.classList.toggle("change");
-}
+ }
